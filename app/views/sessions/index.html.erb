@@ -1,0 +1,6 @@
+<% if is_logged_in? %>
+  <%= "hi, #{name}" %>
+  <%= link_to "Log out", logout_path, method: "post" %>
+<% else %>
+  <%= link_to "Login", login_path %>
+<% end %>
